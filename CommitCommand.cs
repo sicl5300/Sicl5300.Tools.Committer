@@ -46,7 +46,7 @@ internal sealed class CommitCommand : Command<CommitCommand.Settings>
 
     private const string No = "[I Don't Want To Use Title]";
 
-    private static readonly FileAttr DefaultNoTitle = new FileAttr
+    private static FileAttr DefaultNoTitle => new FileAttr
     {
         Title = No,
         UpdateTime = long.MaxValue,
@@ -54,7 +54,7 @@ internal sealed class CommitCommand : Command<CommitCommand.Settings>
     };
     public override int Execute(CommandContext context, Settings settings)
     {
-                var type = AnsiConsole.Prompt(
+        var type = AnsiConsole.Prompt(
             new SelectionPrompt<KeyValuePair<string, string>>()
                 .Title("Select your [aqua]commit type[/]:")
                 .PageSize(8)
