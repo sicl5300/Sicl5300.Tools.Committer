@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using LibGit2Sharp;
-using Spectre.Cli;
+using Spectre.Console.Cli;
 using Spectre.Console;
 
 namespace Sicl5300.Tools.Committer;

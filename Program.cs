@@ -1,6 +1,6 @@
 ﻿using System.Text;
 using System.Text.Json;
-using Spectre.Cli;
+using Spectre.Console.Cli;
 
 namespace Sicl5300.Tools.Committer;
 
